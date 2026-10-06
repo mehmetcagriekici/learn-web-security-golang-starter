@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bootdotdev/learn-web-security/internal/httpserver"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/httpserver"
 )
 
 type checkResults struct {

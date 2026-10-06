@@ -5,8 +5,8 @@ import (
 	"regexp"
 	"strconv"
 
-	"github.com/bootdotdev/learn-web-security/internal/httpx"
-	"github.com/bootdotdev/learn-web-security/internal/orders"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/httpx"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/orders"
 )
 
 var (

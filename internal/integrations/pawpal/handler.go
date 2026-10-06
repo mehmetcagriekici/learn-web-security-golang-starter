@@ -6,8 +6,8 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/bootdotdev/learn-web-security/internal/logging"
-	"github.com/bootdotdev/learn-web-security/internal/orders"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/logging"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/orders"
 )
 
 const maxWebhookBodyBytes int64 = 64 * 1024

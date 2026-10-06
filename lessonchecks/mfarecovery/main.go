@@ -7,8 +7,8 @@ import (
 	"os"
 	"reflect"
 
-	"github.com/bootdotdev/learn-web-security/internal/auth/mfa"
-	"github.com/bootdotdev/learn-web-security/internal/database"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/mfa"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database"
 )
 
 const seededBackupCode = "a6f31c8d94e2b7504d8a1f3c6b9e2075"

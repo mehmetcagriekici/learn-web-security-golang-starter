@@ -5,7 +5,7 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/bootdotdev/learn-web-security/internal/storage"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/storage"
 )
 
 type ShippingDetails struct {

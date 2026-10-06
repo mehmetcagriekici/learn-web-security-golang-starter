@@ -3,12 +3,12 @@ package api
 import (
 	"net/http"
 
-	"github.com/bootdotdev/learn-web-security/internal/accounts"
-	"github.com/bootdotdev/learn-web-security/internal/auth/sessions"
-	"github.com/bootdotdev/learn-web-security/internal/httpx"
-	"github.com/bootdotdev/learn-web-security/internal/logging"
-	"github.com/bootdotdev/learn-web-security/internal/orders"
-	"github.com/bootdotdev/learn-web-security/internal/storefront"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/accounts"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/sessions"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/httpx"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/logging"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/orders"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/storefront"
 )
 
 type integrationOrderResponse struct {

@@ -6,14 +6,14 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/bootdotdev/learn-web-security/internal/accounts"
-	"github.com/bootdotdev/learn-web-security/internal/auth/mfa"
-	"github.com/bootdotdev/learn-web-security/internal/auth/passwordreset"
-	"github.com/bootdotdev/learn-web-security/internal/auth/passwords"
-	"github.com/bootdotdev/learn-web-security/internal/auth/sessions"
-	"github.com/bootdotdev/learn-web-security/internal/httpx"
-	"github.com/bootdotdev/learn-web-security/internal/logging"
-	"github.com/bootdotdev/learn-web-security/internal/templates"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/accounts"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/mfa"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/passwordreset"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/passwords"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/sessions"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/httpx"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/logging"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/templates"
 )
 
 const (

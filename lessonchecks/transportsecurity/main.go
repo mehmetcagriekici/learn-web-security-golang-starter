@@ -10,7 +10,7 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/bootdotdev/learn-web-security/internal/config"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/config"
 )
 
 type policyResult struct {

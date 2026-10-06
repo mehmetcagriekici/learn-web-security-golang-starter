@@ -9,8 +9,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/bootdotdev/learn-web-security/internal/database"
-	"github.com/bootdotdev/learn-web-security/internal/logging"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/logging"
 )
 
 type result struct {

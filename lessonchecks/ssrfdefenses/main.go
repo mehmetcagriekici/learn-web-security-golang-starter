@@ -11,7 +11,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/bootdotdev/learn-web-security/internal/imagepreview"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/imagepreview"
 )
 
 type result struct {

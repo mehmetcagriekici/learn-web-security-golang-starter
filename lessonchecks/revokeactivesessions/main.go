@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/bootdotdev/learn-web-security/internal/accounts"
-	"github.com/bootdotdev/learn-web-security/internal/database"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/accounts"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database"
 )
 
 const originalRevocation = "2000-01-01T12:00:00.000Z"

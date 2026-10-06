@@ -8,7 +8,7 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/bootdotdev/learn-web-security/internal/logging"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/logging"
 )
 
 const redactedValue = "[REDACTED]"

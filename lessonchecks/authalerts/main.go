@@ -14,11 +14,11 @@ import (
 	"os"
 	"path/filepath"
 
-	"github.com/bootdotdev/learn-web-security/internal/auth/passwords"
-	"github.com/bootdotdev/learn-web-security/internal/database"
-	"github.com/bootdotdev/learn-web-security/internal/httpserver"
-	"github.com/bootdotdev/learn-web-security/internal/logging"
-	"github.com/bootdotdev/learn-web-security/internal/storage"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/passwords"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/httpserver"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/logging"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/storage"
 )
 
 const applicationOrigin = "http://bearly-secure.test"

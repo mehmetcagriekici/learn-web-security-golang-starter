@@ -15,9 +15,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bootdotdev/learn-web-security/internal/httpx"
-	"github.com/bootdotdev/learn-web-security/internal/logging"
-	"github.com/bootdotdev/learn-web-security/internal/templates"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/httpx"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/logging"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/templates"
 )
 
 type middleware func(http.Handler) http.Handler
@@ -27,6 +27,13 @@ func applyMiddleware(handler http.Handler, middlewareChain ...middleware) http.H
 		handler = currentMiddleware(handler)
 	}
 	return handler
+}
+
+func setNosniff(next http.Handler) http.Handler {
+	return  http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		w.Header().Set("X-Content-Type-Options", "nosniff")
+		next.ServeHTTP(w, r)
+	})
 }
 
 func permissiveCORS(next http.Handler) http.Handler {

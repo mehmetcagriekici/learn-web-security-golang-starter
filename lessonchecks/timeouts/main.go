@@ -19,8 +19,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/bootdotdev/learn-web-security/internal/database"
-	"github.com/bootdotdev/learn-web-security/internal/httpserver"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/httpserver"
 )
 
 const (

@@ -12,8 +12,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/bootdotdev/learn-web-security/internal/httpserver"
-	"github.com/bootdotdev/learn-web-security/internal/templates"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/httpserver"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/templates"
 )
 
 const searchThrottleLimit = 5

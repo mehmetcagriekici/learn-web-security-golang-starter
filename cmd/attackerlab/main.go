@@ -12,8 +12,8 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/bootdotdev/learn-web-security/internal/attackerlab"
-	"github.com/bootdotdev/learn-web-security/internal/config"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/attackerlab"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/config"
 )
 
 func main() {

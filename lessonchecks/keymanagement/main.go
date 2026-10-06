@@ -17,10 +17,10 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/bootdotdev/learn-web-security/internal/auth/mfa"
-	"github.com/bootdotdev/learn-web-security/internal/config"
-	"github.com/bootdotdev/learn-web-security/internal/database"
-	"github.com/bootdotdev/learn-web-security/internal/storage"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/mfa"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/config"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/storage"
 )
 
 func TestLessonKeyManagementPolicy(t *testing.T) {

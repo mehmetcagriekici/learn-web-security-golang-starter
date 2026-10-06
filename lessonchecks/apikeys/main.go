@@ -9,7 +9,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/bootdotdev/learn-web-security/internal/database"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database"
 )
 
 const seededWarehouseKey = "bs_whsec_8f2d1b7a4c6e9d0f3a5b"

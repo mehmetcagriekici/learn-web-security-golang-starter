@@ -8,7 +8,7 @@ import (
 	"slices"
 	"strings"
 
-	"github.com/bootdotdev/learn-web-security/internal/assistant"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/assistant"
 )
 
 type results struct {

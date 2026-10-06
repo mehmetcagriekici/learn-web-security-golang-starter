@@ -22,8 +22,8 @@ import (
 	"regexp"
 	"strings"
 
-	"github.com/bootdotdev/learn-web-security/internal/database"
-	"github.com/bootdotdev/learn-web-security/internal/uploads"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/uploads"
 )
 
 var safeNamePattern = regexp.MustCompile(`^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}\.(pdf|jpg|png|webp)$`)

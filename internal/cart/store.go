@@ -5,7 +5,7 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/bootdotdev/learn-web-security/internal/database/dbgen"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database/dbgen"
 )
 
 const MaximumQuantity = 99

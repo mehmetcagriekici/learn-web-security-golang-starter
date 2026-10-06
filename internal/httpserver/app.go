@@ -10,27 +10,27 @@ import (
 	"path/filepath"
 	"time"
 
-	"github.com/bootdotdev/learn-web-security/internal/account"
-	"github.com/bootdotdev/learn-web-security/internal/accounts"
-	"github.com/bootdotdev/learn-web-security/internal/admin"
-	"github.com/bootdotdev/learn-web-security/internal/api"
-	"github.com/bootdotdev/learn-web-security/internal/assistant"
-	"github.com/bootdotdev/learn-web-security/internal/auth/mfa"
-	"github.com/bootdotdev/learn-web-security/internal/auth/passkeys"
-	"github.com/bootdotdev/learn-web-security/internal/auth/passwordreset"
-	"github.com/bootdotdev/learn-web-security/internal/cart"
-	"github.com/bootdotdev/learn-web-security/internal/checkout"
-	"github.com/bootdotdev/learn-web-security/internal/httpx"
-	"github.com/bootdotdev/learn-web-security/internal/imagepreview"
-	"github.com/bootdotdev/learn-web-security/internal/integrations/pawpal"
-	"github.com/bootdotdev/learn-web-security/internal/logging"
-	"github.com/bootdotdev/learn-web-security/internal/orders"
-	"github.com/bootdotdev/learn-web-security/internal/reviews"
-	"github.com/bootdotdev/learn-web-security/internal/storage"
-	"github.com/bootdotdev/learn-web-security/internal/storefront"
-	"github.com/bootdotdev/learn-web-security/internal/support"
-	"github.com/bootdotdev/learn-web-security/internal/templates"
-	"github.com/bootdotdev/learn-web-security/internal/uploads"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/account"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/accounts"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/admin"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/api"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/assistant"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/mfa"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/passkeys"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/passwordreset"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/cart"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/checkout"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/httpx"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/imagepreview"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/integrations/pawpal"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/logging"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/orders"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/reviews"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/storage"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/storefront"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/support"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/templates"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/uploads"
 )
 
 const (
@@ -236,6 +236,7 @@ func New(database *sql.DB, logger *logging.Logger, options Options) (*Applicatio
 	handler := applyMiddleware(
 		mainMux,
 		cspNonce,
+		setNosniff,
 		recoverPanics(logger, renderer),
 	)
 	return &Application{Handler: handler, publicRoot: publicRoot}, nil

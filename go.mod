@@ -1,4 +1,4 @@
-module github.com/bootdotdev/learn-web-security
+module github.com/mehmetcagriekici/learn-web-security-golang-starter
 
 go 1.27.0
 

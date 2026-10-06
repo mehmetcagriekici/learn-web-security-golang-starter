@@ -17,7 +17,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/bootdotdev/learn-web-security/internal/database"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database"
 )
 
 const (

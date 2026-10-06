@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/bootdotdev/learn-web-security/internal/auth/passwords"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/auth/passwords"
 )
 
 type result struct {

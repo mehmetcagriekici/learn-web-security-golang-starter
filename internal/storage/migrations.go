@@ -10,8 +10,8 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/bootdotdev/learn-web-security/internal/database/dbgen"
-	"github.com/bootdotdev/learn-web-security/internal/uploads"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database/dbgen"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/uploads"
 )
 
 const seededTaxDocumentName = "mystery-shack-tax-exemption.pdf"

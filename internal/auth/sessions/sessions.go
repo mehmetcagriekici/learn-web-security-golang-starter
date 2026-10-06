@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"time"
 
-	"github.com/bootdotdev/learn-web-security/internal/accounts"
+	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/accounts"
 )
 
 const CookieName = "session_id"
