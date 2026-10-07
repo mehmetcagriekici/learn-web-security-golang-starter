@@ -10,6 +10,7 @@ import (
 	"errors"
 	"fmt"
 	"io"
+	"strings"
 	"time"
 
 	"github.com/mehmetcagriekici/learn-web-security-golang-starter/internal/database/dbgen"
@@ -20,7 +21,7 @@ const defaultSessionTTL = 30 * 24 * time.Hour
 var ErrEmailExists = errors.New("an account already exists for that email")
 
 func NormalizeEmail(email string) string {
-	return email
+	return strings.ReplaceAll(strings.ToLower(email), " ", "")
 }
 
 type User struct {
