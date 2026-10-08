@@ -1,6 +1,7 @@
 package httpserver
 
 import (
+	"context"
 	"errors"
 	"net/http"
 	"strings"
@@ -241,6 +242,14 @@ func (handler *authHandler) Logout(responseWriter http.ResponseWriter, request *
 	sessions.ClearCookie(responseWriter)
 	if challengeToken != "" {
 		clearTOTPLoginChallengeCookie(responseWriter)
+	}
+	currentSession, isValid, err := sessions.Current(request, handler.accounts)
+	if err != nil {
+		handler.internalError(responseWriter, request, err)
+		return
+	}
+	if isValid {
+		handler.accounts.RevokeSession(context.Background(), currentSession.Session.Token)
 	}
 	http.Redirect(responseWriter, request, "/", http.StatusFound)
 }
